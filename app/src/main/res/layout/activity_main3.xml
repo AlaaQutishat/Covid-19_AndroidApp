@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".MainActivity3"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/selectedcountry"
+                android:scaleType="centerCrop"></ImageView>
+
+            <LinearLayout
+    android:id="@+id/layout1"
+                android:layout_marginTop="120dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        android:text="Mar 22, 2020, 12:48 GMT"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                    ></TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Total Cases in "
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                     ></TextView>
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Italy "
+                            android:textColor="@color/color_white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            ></TextView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totalcase"
+                        android:text="53,578"
+                        android:textColor="@color/color_white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        ></TextView>
+                </LinearLayout>
+ <RelativeLayout
+     android:layout_marginRight="30dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:weightSum="1"
+     android:orientation="vertical">
+ <ImageView
+     android:padding="5dp"
+     android:layout_marginTop="10dp"
+     android:src="@mipmap/rectangle"
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+    />
+     <ImageView
+         android:layout_centerInParent="true"
+         android:layout_centerVertical="true"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:id="@+id/flag">
+
+     </ImageView>
+
+
+
+
+ </RelativeLayout>
+            </LinearLayout>
+<Space
+    android:id="@+id/space1"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@id/layout1">
+
+</Space>
+<LinearLayout
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_below="@id/space1"
+  >
+    <LinearLayout
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deaths"
+            android:textColor="#696969"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            ></TextView>
+        <TextView
+            android:id="@+id/Death"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="13,598"
+            android:gravity="center"
+            android:textColor="#FA5252"
+            android:textSize="25sp"
+            android:textStyle="bold"
+           ></TextView>
+    </LinearLayout>
+    <Space android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        ></Space>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recovered"
+            android:textColor="#696969"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            ></TextView>
+        <TextView
+            android:id="@+id/Recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="95,892"
+            android:gravity="center"
+
+            android:textColor="#34C360"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>
+
+            <Space
+                android:id="@+id/space2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/layout2">
+
+            </Space>
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_below="@id/space2"
+                >
+                <LinearLayout
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACTIVE CASES"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:id="@+id/active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="42,681"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        ></TextView>
+                </LinearLayout>
+                <Space android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    ></Space>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+                    <TextView
+                        android:id="@+id/critical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5%"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                       ></TextView>
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Critical"
+                        android:textColor="#AFB8BE"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                       ></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:id="@+id/space3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/layout3">
+
+            </Space>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_below="@id/space3"
+                >
+                <LinearLayout
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:text="TODAY DEATH"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:id="@+id/todaydeath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="2,857"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        ></TextView>
+                </LinearLayout>
+                <Space android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    ></Space>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEW CASES"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:id="@+id/todaycases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        ></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:id="@+id/space4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/layout4">
+
+            </Space>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/space4"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+              >
+
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TODAY RECOVERED"
+                        android:textColor="#696969"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/todayRecovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="6,072"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+
+
+
+
+
+            </LinearLayout>
+            <Space
+                android:id="@+id/space5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/layout5">
+
+            </Space>
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/space5"
+                android:orientation="vertical"
+                >
+
+
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tests"
+                        android:textColor="#696969"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="6,072"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"></TextView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
